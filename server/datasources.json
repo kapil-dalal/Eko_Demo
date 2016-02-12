@@ -4,6 +4,8 @@
     "connector": "memory"
   },
   "mongo": {
+  	"port": 27018,
+    "database": "eko_demo",
     "name": "mongo",
     "connector": "mongodb"
   }
