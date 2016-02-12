@@ -1,0 +1,70 @@
+<div>
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div id="menu">
+            <nav class="navbar-wrapper navbar-default" role="navigation">
+                <div class="container">
+                      <div class="navbar-header">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a  class="pull-left" href="index.html"><H1><b>AX</b>IT</H1></a>
+                      </div>
+             
+                      <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  ng-click="gotoIndex()">Home</a></li>
+                            <li><a style="cursor:pointer" ng-click="gotoIndex()">About</a></li>
+                            <li><a style="cursor:pointer" ng-click="gotoIndex()">Pricing</a></li>
+                            <li><a style="cursor:pointer" ng-click="gotoIndex()">Reviews</a></li>
+                            <li><a style="cursor:pointer" ng-click="gotoIndex()">Contact</a></li>
+                            <li><a style="cursor:pointer" ng-click="gotoDashboard()">Dashboard</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- /header -->
+
+    <!--Slider-->
+    <section id="dashboard" style="padding:0">
+        <div class="fullscreen landing parallax" style="background-image:url('images/new/dark1.jpg');" data-img-width="2000" data-img-height="1433" data-diff="100" ng-controller="dashboardController">
+    
+            <table style="width:100%;border:1px" cellpadding="0" cellspacing="0">
+                <tr align="left" bgcolor="grey"><td>Name</td><td>Email</td><td>Subject</td><td>Message</td></tr>
+                <tr ng-repeat="data in contaceDataArr" bgcolor="white">
+                    <td width="25%">{{data.name}}</td><td width="25%">{{data.email}}</td><td width="25%">{{data.subject}}</td><td width="25%">{{data.message}}</td>
+
+                </tr>
+            </table> 
+        </div>
+<!-- /slider-wrapper -->           
+</section>
+<!--/Slider-->
+
+<footer id="footer" align='center'>
+    <div class="container" align='center'>
+        <div class="row-fluid" align='center'>
+            <div class="span6" align='center'>
+                <ul class="social pull-right">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="#"><i class="icon-google-plus"></i></a></li>                       
+                    <li><a href="#"><i class="icon-youtube"></i></a></li>
+                    <li><a href="#"><i class="icon-tumblr"></i></a></li>                        
+                    <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                    <li><a href="#"><i class="icon-rss"></i></a></li>
+                    <li><a href="#"><i class="icon-github-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>                   
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</div>
