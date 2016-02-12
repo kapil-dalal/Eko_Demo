@@ -12,6 +12,7 @@
                     console.log("newContactObj: ", newContactObj);
                     ContactUs.create(newContactObj, function(response){
                         console.log("contact data created: ", response);
+                        state.go('app.dashboard');
                     }, function(err){
                         console.log("contact data err: ", err);
                     })             
