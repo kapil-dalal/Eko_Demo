@@ -293,12 +293,12 @@
                 <div class="status alert alert-success" style="display: none"></div>
                    <div class="row-fluid">
                     <div class="span5">
-                        <input style="border:0;margin-bottom:0" type="text" class="input-block-level" required="required" placeholder="Name" ng-model="contactName" required="required">
-                        <input style="border:0;margin-bottom:0" type="text" class="input-block-level" required="required" placeholder="Email" ng-model="contactEmail" required="required">
-                        <input style="border:0;margin-bottom:0" type="text" class="input-block-level" required="required" placeholder="Subject" ng-model="contactSubject" required="required">
+                        <input style="border:0;margin-bottom:0" type="text" class="input-block-level" required placeholder="Name" ng-model="contactName">
+                        <input style="border:0;margin-bottom:0" type="text" class="input-block-level" required placeholder="Email" ng-model="contactEmail">
+                        <input style="border:0;margin-bottom:0" type="text" class="input-block-level" required placeholder="Subject" ng-model="contactSubject">
                     </div>
                     <div class="span7">
-                        <textarea name="message" id="message" required="required" class="input-block-level" rows="8" placeholder="Message" ng-model="contactMessage"></textarea>
+                        <textarea name="message" id="message" required class="input-block-level" rows="8" placeholder="Message" ng-model="contactMessage"></textarea>
                     </div>
                 </div>
             <button type="submit" class="btn btn-primary btn-large pull-right" ng-click="submitContactUsForm()">Send Message</button>
